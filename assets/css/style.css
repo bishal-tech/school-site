@@ -1,0 +1,269 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --main-color: #fbb410;
+  /* bg color */
+  --bg-white: #fff;
+  --bg-grey: #E9E9E9;
+  --bg-dark: #3D3D3D;
+  /* font color */
+  --heading-color: #000;
+  --para-color: #4A4A4A;
+}
+
+html {
+  /* font-size: 62.5%; */
+  /* 1rem = 10px  */
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-grey);
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+h1,
+h2 {
+  font-family: "Roboto", sans-serif;
+  text-transform: capitalize !important;
+  font-weight: 900 !important;
+  /* line-height: 20px; */
+  color: var(--heading-color);
+}
+
+h3 {
+  font-size: 25px !important;
+  font-family: "Roboto", sans-serif;
+  color: var(--heading-color);
+}
+
+p {
+  color: var(--para-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+p,
+li,
+a,
+button,
+input {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
+  text-transform: none;
+}
+
+span {
+  color: var(--main-color);
+}
+
+/* custom classes is here  */
+.bg-yellow {
+  background-color: var(--main-color);
+}
+
+.bg-grey {
+  background-color: var(--bg-grey);
+}
+
+.bg-dark {
+  background-color: var(--bg-dark);
+}
+
+.text-white {
+  color: var(--bg-white);
+}
+
+.text-dark {
+  color: var(--heading-color);
+}
+
+.text-yellow {
+  color: var(--main-color);
+}
+
+.cta-btn-1 {
+  padding: 10px 30px;
+  border: 2px solid var(--bg-white);
+  font-size: 18px;
+  background-color: var(--main-color);
+  color: var(--bg-white);
+  transition: all 0.4s linear;
+
+}
+
+.cta-btn-1:hover {
+  border: 2px solid var(--main-color);
+  font-size: 18px;
+  background-color: var(--bg-white);
+  color: var(--main-color);
+  transition: all 0.3s linear;
+
+}
+
+
+/* -------------------------------- Header style start here  */
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+}
+
+
+/* -------------------------------- Banner section style start here  */
+
+
+.banenr-slider {
+  position: relative;
+}
+
+.banner-img {
+  position: relative;
+  top: 0;
+  right: 0;
+
+  height: 600px;
+  width: 100%;
+  z-index: -1;
+}
+
+.banner-content {
+  position: absolute;
+  left: 73px;
+  top: 0;
+  height: 450px;
+  background-color: var(--main-color);
+  width: 350px;
+  padding: 20px;
+}
+
+.banner-content h1 {
+  color: var(--bg-white);
+  text-align: right;
+}
+
+.banner-content p {
+  color: var(--bg-white);
+  text-align: left;
+
+}
+
+/* -------------------------------- About section style start here  */
+
+#about-section {
+  margin-top: -150px;
+}
+
+.about-content {
+  text-align: right;
+}
+
+
+/* here are bg classes  */
+.bg-pink {
+  background-color: pink;
+}
+
+.bg-green {
+  background-color: rgb(112, 173, 112);
+}
+
+.bg-blue {
+  background-color: rgb(70, 67, 217);
+}
+
+.bg-orange {
+  background-color: orange;
+}
+
+.service-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  /* border-radius: 50%; */
+  /* height: 120px;
+  width: 120px; */
+}
+
+.service-nav img {
+  width: 60px;
+  height: 60px;
+}
+
+
+.activity-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.activity-box img {
+  width: 60px;
+  height: 60px;
+  margin: 20px;
+}
+
+
+.number-bg {
+  background-image: url(../img/banner-1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: 100%;
+}
+
+.number-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
+
+.number-box h2,
+.number-box p {
+  color: var(--bg-white);
+}
+
+.number-box p {
+  padding: 10px 20px;
+}
+.teacher-slider{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+.teacher-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* background-color: #fbb410; */
+  max-width: 315px;
+  padding: 15px 15px;
+}
+.teacher-slide img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  
+}
